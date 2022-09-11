@@ -14,6 +14,15 @@ const eventHelpers = require('../helpers/eventHelpers');
 const imageHelpers = require('../helpers/imageHelpers');
 // const { read } = require('files');
 
+const verifylogIn=(req,res,next)=>{
+  if(req.session.loggedIn){
+    next()
+  }
+  else{
+    res.redirect('/sign-in')
+  }
+}
+
 /* GET home page. */
 router.get('/', function (req, res, next) {
  eventHelpers.getevent().then((events)=>{
@@ -85,11 +94,11 @@ router.post('/sign_in', (req, res) => {
   //     }
   // })
 });
-router.get('/AddStaff', function (req, res, next) {
+router.get('/AddStaff',verifylogIn, function (req, res, next) {
   res.render('addnewstaf', { layout: 'adminLayout.hbs' });
 });
 
-router.post('/add_staf', (req, res) => {
+router.post('/add_staf',verifylogIn, (req, res) => {
   console.log(req.body);
   userHelpers.addstaff(req.body,(id) => {
     req.files.staffphoto.mv('./public/Staff Photos/' + id + '.jpg', (err, done) => {
@@ -104,14 +113,14 @@ router.post('/add_staf', (req, res) => {
 
 });
 
-router.get('/staffdetails', function (req, res, next) {
+router.get('/staffdetails',verifylogIn, function (req, res, next) {
   userHelpers.getstaffdetails().then((staffdetails)=>{
     res.render('admin_edit_staff_details.hbs', { layout: 'adminLayout.hbs',staffdetails });
 
   })
 });
 
-router.get('/dstaff/:id', (req, res) => {
+router.get('/dstaff/:id',verifylogIn, (req, res) => {
   let sid = req.params.id
   userHelpers.deletestaff(sid).then((response) => {
     var filpath = './public/Staff Photos/'+sid+'.jpg';
@@ -120,15 +129,15 @@ router.get('/dstaff/:id', (req, res) => {
   })
 })
 
-router.get('/add-question-papper', function (req, res, next) {
+router.get('/add-question-papper',verifylogIn, function (req, res, next) {
   res.render('addQuestionpapper', { layout: 'adminLayout.hbs' });
 });
-router.get('/add-question-papper_staff', function (req, res, next) {
+router.get('/add-question-papper_staff',verifylogIn, function (req, res, next) {
   let userstaff = req.session.user
   res.render('addQuestionpapper', { layout: 'stafflayout.hbs', userstaff });
 });
 
-router.post('/add_q', (req, res) => {
+router.post('/add_q',verifylogIn, (req, res) => {
   console.log(req.body);
   console.log(req.body.Qpapper)
 
@@ -182,25 +191,25 @@ router.get('/qpapper', function (req, res, next) {
   })
 });
 
-router.get('/dqpapper', function (req, res, next) {
+router.get('/dqpapper',verifylogIn, function (req, res, next) {
   questionpapperhelpers.getquestionpapper().then((qpapperdetails) => {
     res.render('deleteqpapper.hbs', { layout: 'adminLayout.hbs', qpapperdetails });
   })
 });
 
-router.get('/dqpapper_staff', function (req, res, next) {
+router.get('/dqpapper_staff',verifylogIn, function (req, res, next) {
   questionpapperhelpers.getquestionpapper().then((qpapperdetails) => {
     let userstaff = req.session.user
     res.render('deleteqpapper.hbs', { layout: 'stafflayout.hbs', qpapperdetails, userstaff });
   })
 });
 
-router.get('/addevent', function (req, res, next) {
+router.get('/addevent',verifylogIn, function (req, res, next) {
     res.render('add_events.hbs', { layout: 'adminLayout.hbs' });
   
 });
 
-router.post('/add-events', (req, res) => {
+router.post('/add-events',verifylogIn, (req, res) => {
   console.log(req.body);
   eventHelpers.addEvent(req.body, (id)=>{
     req.files.event_photo1.mv('./public/event images/' + id + 'photo1.jpg', (err, done) => {
@@ -221,14 +230,14 @@ router.post('/add-events', (req, res) => {
 
 });
 
-router.get('/devents', function (req, res, next) {
+router.get('/devents',verifylogIn, function (req, res, next) {
   eventHelpers.getevent().then((events)=>{
     res.render('Delete events', { layout: 'adminLayout.hbs',events });
 
   })
 });
 
-router.get('/devents/:id', (req, res) => {
+router.get('/devents/:id',verifylogIn, (req, res) => {
   let eid = req.params.id
   eventHelpers.deleteevents(eid).then((response) => {
     var filpath1 = './public/event images/'+eid+'photo1.jpg';
@@ -239,12 +248,12 @@ router.get('/devents/:id', (req, res) => {
   })
 })
 
-router.get('/addimages', function (req, res, next) {
+router.get('/addimages',verifylogIn, function (req, res, next) {
   res.render('add Gallery Images.hbs', { layout: 'adminLayout.hbs' });
 
 });
 
-router.post('/add-Image', (req, res) => {
+router.post('/add-Image',verifylogIn, (req, res) => {
 console.log(req.body);
 imageHelpers.addImage(req.body, (id)=>{
   req.files.Image.mv('./public/Gallery Images/' + id + '.jpg', (err, done) => {
@@ -257,14 +266,14 @@ imageHelpers.addImage(req.body, (id)=>{
 })
 });
 
-router.get('/dimages', function (req, res, next) {
+router.get('/dimages',verifylogIn, function (req, res, next) {
 imageHelpers.getGalleryImages().then((Images)=>{
   res.render('Delete Gallery Images.hbs', { layout: 'adminLayout.hbs',Images });
 
 })
 });
 
-router.get('/dImage/:id', (req, res) => {
+router.get('/dImage/:id',verifylogIn, (req, res) => {
   let Iid = req.params.id
   imageHelpers.deleteGalleryImages(Iid).then((response) => {
     var filpath = './public/event images/'+Iid+'.jpg';
@@ -284,7 +293,7 @@ router.get('/download/:id', (req, res) => {
   })
 });
 
-router.get('/dpapper/:id', (req, res) => {
+router.get('/dpapper/:id',verifylogIn, (req, res) => {
   let qid = req.params.id
   questionpapperhelpers.deleteQuestionPapper(qid).then((response) => {
     var filpath = './public/QuestionPappers/'+qid+'.jpg';
