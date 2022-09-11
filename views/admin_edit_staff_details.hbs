@@ -1,0 +1,30 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      {{!-- <th scope="col">#</th>
+      <th scope="col"></th> --}}
+      <th scope="col">Full Name</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Username</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each staffdetails}}
+    <tr>
+      {{!-- <th scope="row">{{this._id}}</th> --}}
+      {{!-- <td><img src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg" alt="icon"></td> --}}
+      <td>{{this.fistname}} {{this.lastname}}</td>
+      <td>{{this.DOB}}</td>
+      <td>{{this.inlineRadioOptions}}</td>
+      <td>{{this.email}}</td>
+      <td>{{this.phonenumber}}</td>
+      <td>{{this.username}}</td>
+      <td><a href="//{{this._id}}" class="btn btn-primary">Edit</a> <a href="/dstaff/{{this._id}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      {{!-- <th scope="col">#</th> --}}
+      <th scope="col">Event Name</th>
+      <th scope="col">Time</th>
+      <th scope="col">Event Venue</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each events}}
+    <tr>
+      <td><img src="event images/{{this._id}}photo1.jpg" alt="" style="height: 100px; width: 150px;"><img src="event images/{{this._id}}photo2.jpg" alt="" style="height: 100px; width: 150px;"></td>
+      <td>{{this.event_name}}</td>
+      <td>{{this.event_time}}</td>
+      <td>{{this.event_venue}}</td>
+      <td><a href="/devents/{{this._id}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

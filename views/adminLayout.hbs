@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
+  <!-- Custom Theme files -->
+  <link href="stylesheets/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+
+  <!-- Custom Theme files -->
+  <link href="stylesheets/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+  {{!--
+  <link href="stylesheets/style.css" type="text/css" rel="stylesheet" media="all"> --}}
+  <!-- font-awesome icons -->
+  <link href="stylesheets/fontawesome-all.min.css" rel="stylesheet">
+  <!-- //Custom Theme files -->
+  <!-- online-fonts -->
+  <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  <!-- //online-fonts -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <nav class="mnu navbar-light" style="background-color: #1a1a1b;">
+    <label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+    <input type="checkbox" id="drop">
+    <ul class="menu">
+      <li class="mr-lg-4 mr-3 active"><a href="/">Home</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Events
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/addevent">Add Events</a>
+          <a class="dropdown-item" href="/devents">Delete Events</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Question Paper
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/add-question-papper">Add Question Paper</a>
+          <a class="dropdown-item" href="/dqpapper">Delete Question Paper</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Gallery
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/addimages">Add Gallery Images</a>
+          <a class="dropdown-item" href="/dimages">Delete Gallery Images</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Staff
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/AddStaff">Add Staff</a>
+          <a class="dropdown-item" href="/staffdetails">Delete Staff</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="mr-lg-4 mr-3"><a href="/logout">Logout</a></li>
+      {{!-- <li class="mr-lg-4 mr-3"><a href="/addevent">Add Events</a></li>
+      <li class="mr-lg-4 mr-3"><a href="/devents">Delete Events</li> --}}
+      {{!-- <li class="mr-lg-4 mr-3"><a href="/add-question-papper">Add Question Papper</a></li>
+      <li class="mr-lg-4 mr-3"><a href="/dqpapper">Delete Question Papper</li> --}}
+      {{!-- <li class="mr-lg-4 mr-3"><a href="/addimages">Add Gallery Images</li>
+      <li class="mr-lg-4 mr-3"><a href="/dimages">Delete Gallery Images</li> --}}
+      {{!-- <li class="mr-lg-4 mr-3"><a href="/AddStaff">Add Staff</li>
+      <li class="mr-lg-4 mr-3"><a href="/staffdetails">Staff Details</li>
+      <li class="mr-lg-4 mr-3"> --}}
+        <!-- First Tier Drop Down -->
+        {{!--
+      </li> --}}
+      <!-- Example single danger button -->
+
+    </ul>
+
+  </nav>
+
+  {{{body}}}
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

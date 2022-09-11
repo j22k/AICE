@@ -1,0 +1,66 @@
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-12 col-lg-9 col-xl-7">
+        <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Add Question Papper</h3>
+
+            <form action="/add_q" method="post" enctype="multipart/form-data">
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="date" id="firstName" class="form-control form-control-lg" name="year-of-q"/>
+                    <label class="form-label" for="firstName">Question Papper Year</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <input type="text" id="lastName" class="form-control form-control-lg" name="Qcode" />
+                    <label class="form-label" for="lastName">Question Papper Code</label>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-12">
+
+                  <select class="form-control form-control-lg" name="Subject">
+                    <option value="1" disabled>Choose option</option>
+                    <option value="Micro Controller">Micro Controller</option>
+                    <option value="Mobile Communication">Mobile Communication</option>
+                    <option value="Computer Network">Computer Network</option>
+                    <option value="Smart Device Programing">Smart Device Programing</option>
+                    <option value="Web Programing">Web Programing</option>
+                  </select>
+                  <label class="form-label select-label">Choose option</label>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+
+                  <div class="form-outline">
+                    <label for="exampleFormControlFile1" >Upload Question Papper</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1" name="Qpapper" >
+                  </div>
+
+                </div>
+
+              <div class="mt-4 pt-2">
+                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card-box">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6">
+                            <h4 class="header-title m-b-30"></h4>Question pappers</h4>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        {{#each qpapperdetails}}
+                        <div class="col-lg-3 col-xl-2">
+                            <div class="file-man-box">
+                                {{!-- <a href="" class="file-close"><i class="fa fa-times-circle"></i></a>  --}}
+                                <div class="file-img-box"><img src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg" alt="icon"></div><a href="/download/{{this._id}}" class="file-download"><i class="fa fa-download"></i></a>
+                                <div class="file-man-title">
+                                    <h5 class="mb-0 text-overflow">{{this.Subject}}</h5>
+                                    <p class="mb-0"><small>{{this.Qcode}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    <div class="text-center mt-3">
+                        <button type="button" class="btn btn-outline-danger w-md waves-effect waves-light"><i class="mdi mdi-refresh"></i> Load More Files</button>
+                    </div>
+                </div>
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- container -->
+</div>

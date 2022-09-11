@@ -1,0 +1,428 @@
+
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Aice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Indoctrination Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    {{!-- <!-- Custom Theme files -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	 <!-- font-awesome icons -->
+    <link href="css/fontawesome-all.min.css" rel="stylesheet">
+	<!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <!-- //online-fonts --> --}}
+</head>
+
+<body>
+    <!-- banner -->
+    <div class="inner-banner">
+        <!-- header -->
+    {{!-- <header>	
+	<nav class="mnu navbar-light">
+            <div class="logo" id="logo">
+                <h1><a href="index.html">JARVIS Creation<br>Since 2K19-2K22</a></h1>
+            </div>
+				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+                <input type="checkbox" id="drop">
+                    <ul class="menu">
+                        <li class="mr-lg-4 mr-3"><a href="index.html">Home</a></li>
+						<li class="mr-lg-4 mr-3 active"><a href="about.html">About</a></li>
+                        <li class="mr-lg-4 mr-3"><a href="services.html">Services</a></li>
+						<li class="mr-lg-4 mr-3">
+                            <!-- First Tier Drop Down -->
+                            
+                                <li><a href="gallery.html">Gallery</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+    </nav>
+</header> --}}
+<!-- //header -->
+        
+    </div>
+	 <!-- //banner-text -->
+	    <section class="banner_bottom py-lg-5">
+		<div class="container py-5">
+            <div class="title-section pb-sm-5 pb-3">
+               <h2 class="heading-agileinfo text-center pb-4">About <span> Us</span></h2>
+            </div>
+			<div class="inner_sec_info_wthree_agile">
+				<div class="row help_full">
+					<div class="col-lg-6 banner_bottom_grid help">
+						<img src="images/about AICE.jpg" alt=" " class="img-fluid">
+					</div>
+					<div class="col-lg-6 banner_bottom_left">
+						<h4>AICE(Association of Innovative Computer Engineers)</h4>
+						<p>Computer Science is the study of computers and computational systems. Unlike electrical and computer engineers, computer scientists deal mostly with software and software systems; this includes their theory, design, development, and application.Principal areas of study within Computer Science include artificial intelligence, computer systems and networks, security, database systems, human computer interaction, vision and graphics, numerical analysis, programming languages, software engineering, bioinformatics and theory of computing.</p>
+						</div>
+				</div>
+			</div><br>
+			<br>
+			<div class="inner_sec_info_wthree_agile">
+				<div class="row help_full">
+					<div class="col-lg-6 banner_bottom_grid help">
+						<img src="images/g1.jpg" alt=" " class="img-fluid">
+					</div>
+					<div class="col-lg-6 banner_bottom_left">
+						<h4>JARVIS (Just A Rather very Inteligent Student)</h4>
+						<p>The JARVIS Club is an educational and fun group. The club explores both computer architecture and new application software.  We try to help anyone with his or her computer problems.  We also know quite a bit about programming and networking. Our mission is to promote computer programming and to expand the scope of computer knowledge within this school.</p>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--//ab-->
+<!-- team -->
+	<div class="team py-lg-5">
+		<div class="container py-5">
+            <div class="title-section pb-sm-5 pb-3">
+               <h3 class="heading-agileinfo text-center pb-4">Our <span> Teachers</span></h3>
+            </div>
+			{{#each staffdetails}}
+			<div class="row team-bottom">
+				<div class="col-sm-4 team-grid">
+					<img src="Staff Photos/{{this._id}}.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>{{this.firstName}} {{this.lastname}}</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="{{this.facebook}}">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="{{this.twetter}}">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="{{this.youtube}}">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>{{this.position}}</h4>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+				<div class="col-sm-4 team-grid">
+					<img src="images/shithinsir.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Shithin Sir</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>Lecturer</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
+					<img src="images/arunsir22.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Arun Sir</h4>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+					</div><br>
+					<br>
+					<br>
+					<br>
+					<div class="team-text">
+						<h4>Lecturer</h4>
+					</div>
+					</div>
+				</div>
+				<div class="col-sm-4 team-grid  mt-sm-0 mt-3">
+					<img src="images/mishubsir.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Mishab Sir</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>Demonstrator</h4>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- //team -->
+	<div class="team py-lg-5">
+		<div class="container py-5">
+            <div class="title-section pb-sm-5 pb-3">
+             </div>
+			<div class="row team-bottom">
+				<div class="col-sm-4 team-grid">
+					<img src="images/veena miss.jpeg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Veena Miss</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>Head Of Department</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
+					<img src="images/varshamiss.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Varsha Miss</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>Lecturer</h4>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 team-grid mt-sm-0 mt-3">
+					<img src="images/thensila .miss.jpg" class="img-fluid img-thumbnail" alt="">
+					<div class="caption">
+						<div class="team-text">
+							<h4>Fathima Thensila Miss</h4>
+						</div>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="fa fa-facebook f1"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-twitter f2"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="fa fa-google-plus f3"></span>
+								</a>
+							</li>
+						</ul>
+						<br>
+						<br>
+						<br>
+						<br>
+						<div class="team-text">
+							<h4>Asist Demonstrator</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--footer-->
+	<footer>
+		<div class="container py-md-4 mt-md-3">
+			<div class="row footer-top-w3layouts-agile py-5">
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>About Us</h3>
+					</div>
+					<div class="footer-text">
+						<p>The JARVIS Club is an educational and fun group. The club explores both computer architecture and new application software.  We try to help anyone with his or her computer problems.  We also know quite a bit about programming and networking. Our mission is to promote computer programming and to expand the scope of computer knowledge within this school.</p>
+					</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>Contact Us</h3>
+					</div>
+					<div class="contact-info">
+					<h4>Location :</h4>
+					<p>Majlis Polytechnic College Puramannur.</p>
+					<div class="phone">
+						<h4>Phone :</h4>
+						<p>Phone : 1234567890</p>
+						<p>Email : <a href="mailto:info@example.com">majlispoly.in</a></p>
+					</div>
+				</div>
+				</div>
+				<div class="col-md-4 footer-grid">
+					<div class="footer-title">
+						<h3>Recent Posts</h3>
+					</div>
+					<div class="footer-list">
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g1.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g2.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g3.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g4.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g5.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g6.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g7.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g9.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="flickr-grid">
+							<a href="services.html">
+								<img src="images/g8.jpg" class="img-fluid" alt=" ">
+							</a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

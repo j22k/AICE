@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Event Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Event Venue</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each Images}}
+    <tr>
+      <td><img src="Gallery Images/{{this._id}}.jpg" alt="" style="height: 100px; width: 150px;"></td>
+      <td>{{this.Image_name}}</td>
+      <td>{{this.month}}</td>
+      <td>{{this.Image_venue}}</td>
+      <td><a href="/dImage/{{this._id}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

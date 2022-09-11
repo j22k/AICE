@@ -1,0 +1,495 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Aice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Indoctrination Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<!-- font-awesome icons -->
+	<link href="css/fontawesome-all.min.css" rel="stylesheet">
+	<!-- //Custom Theme files -->
+	<!-- online-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+	<!-- //online-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="inner-banner">
+		<!-- header -->
+		{{!-- <header>
+			<nav class="mnu navbar-light">
+				<div class="logo" id="logo">
+					<h1><a href="index.html">JARVIS Creation<br>Since 2K19-2K22</a></h1>
+				</div>
+				<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+				<input type="checkbox" id="drop">
+				<ul class="menu">
+					<li class="mr-lg-4 mr-3 "><a href="index.html">Home</a></li>
+					<li class="mr-lg-4 mr-3"><a href="about.html">About</a></li>
+					<li class="mr-lg-4 mr-3"><a href="services.html">Services</a></li>
+					<li class="mr-lg-4 mr-3 active">
+						<!-- First Tier Drop Down -->
+
+					<li><a href="gallery.html">Gallery</a>
+					</li>
+				</ul>
+				</li>
+
+				</ul>
+			</nav>
+		</header> --}}
+		<!-- //header -->
+
+	</div>
+	<!-- //banner-text -->
+	<!--Gallery-->
+	<section class="gallery py-lg-5">
+		<div class="container py-5">
+			<div class="title-section pb-sm-5 pb-3">
+				<h2 class="heading-agileinfo text-center pb-4">Our <span> Gallery</span></h2>
+			</div>
+			<div class="row agile_gallery_grids w3-agile demo">
+				<div class="col-md-4 gal-sec">
+
+					{{#each Images}}
+					<div class="gallery-grid1">
+						<a href="gal1">
+							<img src="Gallery Images/{{this._id}}.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>{{this.Image_name}}<br></h4>
+								<p>{{this.Image_month}}</p>
+							</div>
+						</a>
+					</div>
+
+					{{/each}}
+					
+					
+					{{!-- <div class="gallery-grid1">
+						<a href="#gal1">
+							<img src="images/gallery1.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal2">
+							<img src="images/gallery2.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/gallery3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/2nd 1.JPG" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/3rd 9.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/2nd 5.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/3rd 7.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/1st 3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal3">
+							<img src="images/3rd 5.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>JARVIS Creation<br>Since 2K19-2K22</h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div> --}}
+				</div>
+				<div class="col-md-4 gal-sec">
+					{{#each events}}
+					<div class="gallery-grid1">
+						<a href="">
+							<img src="event images/{{this._id}}photo1.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4>{{this.event_name}}<br></h4>
+								<p>{{this.event_time}}</p>
+							</div>
+						</a>
+					</div>
+					{{/each}}
+					
+					{{!-- <div class="gallery-grid1">
+						<a href="#gal4">
+							<img src="images/Induction Programme on 25 October 2021..jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<h4><br></h4>
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal5">
+							<img src="images/aice 2020 march 3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/aice 2020 march.3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/3rd 1.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/3rd 2.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/1st 1.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/3rd 7.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/3rd 4.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/2nd 2.JPG" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal6">
+							<img src="images/2nd 3.JPG" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="col-md-4 gal-sec">
+					<div class="gallery-grid1">
+						<a href="#gal7">
+							<img src="images/aice quiz.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal8">
+							<img src="images/aice quiz1.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/aice quiz2.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/aice quiz3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/Independence day celebration.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/3rd 7.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/1st 3.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/2nd 2.JPG" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/3rd 6.jpeg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div>
+					<div class="gallery-grid1">
+						<a href="#gal9">
+							<img src="images/1st 2.jpg" alt=" " class="img-fluid" />
+							<div class="p-mask">
+								<p>Gallery</p>
+							</div>
+						</a>
+					</div> --}}
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- popup-->
+	{{!-- {{#each Images}}
+	<div id="{{this._id}}" class="pop-overlay animate">
+		<div class="popup">
+			<img src="Gallery Images/{{this._id}}.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4"></p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	{{/each}} --}}
+	<!-- //popup -->
+
+	<!-- popup-->
+	{{!-- {{#each events}} --}}
+	{{!-- <div id="{{this._id}}" class="pop-overlay animate">
+		<div class="popup">
+			<img src="event images/{{this._id}}photo1.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4"></p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div> --}}
+	{{!-- {{/each}} --}}
+	<!-- //popup -->
+	<!-- popup-->
+	{{!-- <div id="gal3" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/gallery3.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4"></p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div> --}}
+	<!-- //popup3 -->
+	<!-- popup-->
+	{{!-- <div id="gal4" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/Induction Programme on 25 October 2021..jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Induction Programme on 25 October 2021.
+				Presided by Respected Principal Sri M SANKARAN.
+				Key Note Address by Respected Sri C P HAMZA Sahib , Secretary Majlis Educational Complex and Sri ABDUL
+				KAREEM , Retired Superintendent of Police Malappuram Dist.</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div> --}}
+	<!-- //popup -->
+	<!-- popup-->
+	{{!-- <div id="gal5" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice 2020 march 3.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">AICE 2020
+				Association of Innovative Computer Engineers
+				3 March 2020</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal6" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice 2020 march.3.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">AICE 2020
+				Association of Innovative Computer Engineers
+				3 March 2020</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal7" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice quiz.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Association of Innovative Computer Engineers
+				AICE - 2020
+
+				General Quiz Competition
+				Coding and Debugging
+				PES - Pro Evolution Soccer</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal8" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice quiz1.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Association of Innovative Computer Engineers
+				AICE - 2020
+
+				General Quiz Competition
+				Coding and Debugging
+				PES - Pro Evolution Soccer</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<!-- popup-->
+	<div id="gal9" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice quiz2.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Association of Innovative Computer Engineers
+				AICE - 2020
+
+				General Quiz Competition
+				Coding and Debugging
+				PES - Pro Evolution Soccer</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal9" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/aice quiz3.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Association of Innovative Computer Engineers
+				AICE - 2020
+
+				General Quiz Competition
+				Coding and Debugging
+				PES - Pro Evolution Soccer</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div>
+	<!-- //popup -->
+	<div id="gal9" class="pop-overlay animate">
+		<div class="popup">
+			<img src="images/Independence day celebration.jpg" alt="Popup Image" class="img-fluid" />
+			<p class="mt-4">Independence day celebration</p>
+			<a class="close" href="#gallery">&times;</a>
+		</div>
+	</div> --}}
+	<!--//Gallery-->
+	<!--footer-->
+
+</body>
+
+</html>

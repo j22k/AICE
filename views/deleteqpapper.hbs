@@ -1,0 +1,23 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col"></th>
+      <th scope="col">Date</th>
+      <th scope="col">Questoin Papper Code</th>
+      <th scope="col">Subject</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each qpapperdetails}}
+    <tr>
+      <td><img src="https://coderthemes.com/highdmin/layouts/assets/images/file_icons/pdf.svg" alt="icon"></td>
+      <td>{{this.year-of-q}}</td>
+      <td>{{this.Qcode}}</td>
+      <td>{{this.Subject}}</td>
+      <td><a href="/dpapper/{{this._id}}" class="btn btn-danger">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
