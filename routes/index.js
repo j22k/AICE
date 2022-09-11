@@ -19,7 +19,7 @@ const verifylogIn=(req,res,next)=>{
     next()
   }
   else{
-    res.redirect('/sign-in')
+    res.redirect('/admin')
   }
 }
 
